@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<style>
-ul {
+<style> 
+/* nav bar style*/
+#nav ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(250, 248, 248);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
 }
-
-li {
+#nav li {
   float: left;
 }
 
-li a {
+#nav a {
   display: block;
-  color: black;
-  text-align: justify;
-  padding-bottom: 150px;
+  padding: 8px;
+  color: darkgray;
   text-decoration: none;
-  /*position: absolute;*/
-  top: 0;
 }
 
-/* Change the link underline on hover */
-li a:hover {
-  text-decoration: underline;
-}
-li {
-  display:  flex
-}
-body {
-    display: flex;
-    justify-content: center;
-    padding-top: 150px;
+/*google logo style*/
+
+#logo {
+  display: block;
+  position: relative;
+   margin-left: auto;
+   margin-right: auto;
+  padding-top: 5%;
+
+  
 }
 </style>
 <html>
   <div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#store">Store</a></li>
-      <li><a href="#gmail">Gmail</a></li>
-      <li><a href="#images">Images</a></li>
-      <li style="float:right"><a class="active" href="#about">About</a></li>
+    <!--Nav Bar-->
+    <div id= "nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#store">Store</a></li>
+        <li style="float:right"><a class="active" href="#gmail">Gmail</a></li>
+       <li style="float:right"><a class="active" href="#images">Images</a></li>
+    </div>
     </ul>
-  <body>
+    <!--Google logo-->
+    <div id="logo">
    
-    <img alt="Google" id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" align= "middle">
+     <img alt="Google" id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" align= "middle">
   
-  </body>
+    </div>
 
   </div>
  
