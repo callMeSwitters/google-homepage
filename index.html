@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <style> 
+
 /* nav bar style*/
 #nav ul{
   list-style-type: none;
@@ -10,16 +11,29 @@
 }
 #nav li {
   float: left;
+  
 }
 
 #nav a {
   display: block;
   padding: 8px;
-  color: darkgray;
+  color: #000000;
   text-decoration: none;
+
+}
+
+}
+
+#nav  a:hover {
+  
+  text-decoration: underline !important;
+
 }
 
 /*google logo style*/
+html{
+  box-sizing: border-box;
+}
 
 #logo {
   display: block;
@@ -27,10 +41,36 @@
    margin-left: auto;
    margin-right: auto;
   padding-top: 5%;
+}
 
+/* search box*/
+
+.search-box {
+  display: block;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  height: 45px;
+  width: 600px;
+  border-radius: 50%;
+ 
+}
+
+#search{
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 90%;
+  border-radius: 30px;
+  padding-bottom: 10px;
+  border: 2px solid darkgrey; 
   
 }
+
 </style>
+
 <html>
   <div>
     <!--Nav Bar-->
@@ -48,7 +88,16 @@
      <img alt="Google" id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" align= "middle">
   
     </div>
-
+     <!--<form class="example" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
+    <div class="container">
+		  <div class="search-box">
+			  <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+			<form action="" class="search-form">
+				<input type="text" placeholder="search-icon" id="search" autocomplete="off">
+			</form>
   </div>
  
  
